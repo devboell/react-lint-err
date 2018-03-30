@@ -5,11 +5,13 @@
       "jsx": true
     }
   },
+  "extends": ["airbnb"],
   "plugins": ["import", "react"],
   "rules": {
     "semi": ["error", "never"],
     "import/no-unresolved": 2,
-    "react/jsx-uses-react": 2
+    "react/jsx-uses-react": 2,
+    "react/jsx-filename-extension": 0
   },
   "settings": {
     "import/resolver": "webpack"
