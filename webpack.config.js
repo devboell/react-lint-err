@@ -30,6 +30,6 @@ module.exports = {
     ],
   },
   externals: {
-    react: true,
+    react: 'react',
   },
 }
