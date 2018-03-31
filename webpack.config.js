@@ -1,5 +1,4 @@
 const path = require('path')
-const webpack = require('webpack')
 
 module.exports = {
   mode: 'production',
@@ -20,17 +19,14 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    new webpack.NamedModulesPlugin(),
-  ],
   resolve: {
-    modules: ['src', 'node_modules'],
+    modules: ['node_modules', 'src'],
     extensions: [
       '.js',
       '.jsx',
     ],
   },
   externals: {
-    react: 'react',
+    react: true,
   },
 }
